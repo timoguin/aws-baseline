@@ -24,7 +24,12 @@ it's not much more than a few lists of AWS services at this point.)
 
 View the [Contributing Guide] if you're interested in. . . contributing.
 
+## License
+
+This project uses the [MIT License].
+
 
 <!-- Markdown Anchors -->
 [initial draft]: docs/index.md
 [Contributing Guide]: .github/CONTRIBUTING.md
+[MIT License]: .github/LICENSE.md
