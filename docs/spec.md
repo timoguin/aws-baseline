@@ -1,25 +1,34 @@
-# Baseline Spec
+# Specification
 
-This document should lay out the high-level view, an outline if you will, of
-everything right you want to do when creating a secure AWS account with a solid
-foundation.
+This document contains a high-level overview of the essentials. It contains a
+breakdown of different categories of requirements.
 
-*Status*: Planning
+## Processes
 
-## Prerequisites
+### Manual
+
+Some actions require logging in as a root user to perform. These are typically
+related to initial IAM user creation, enabling/disabling certain regions,
+billing, and other things.
+
+Prequisites:
 
 - understand the scope of any accounts being managed
 - use a consistent naming scheme across accounts
 - use a consistent process to manage any root account emails and passwords
 
-## Manual
+The following process much be performed manually, typically as the root user:
 
 - root user password
 - root user mfa
 - disable unused regions
 - opt in to the longer ARN format for ECS (not necessary for new accounts)
 
-## Automated
+### Automated
+
+Other processes can be automated via the relevant AWS APIs.
+
+TODO: This is really just a big list, you know. . .
 
 - account alias
 - account password policy
@@ -50,9 +59,7 @@ foundation.
 - s3 inventory
 - s3 analytics
 - service quotas
-
-## Events to Capture
-
+- Events to Capture¶
 - root logins
 - config changes
 - access denied events
@@ -60,11 +67,30 @@ foundation.
 
 ## Common Tooling
 
+Every account needs tooling to move events around.
+
 - logging pipelines
 - notification pipelines
 
-## Compliance Audits
+### Compliance
+
+Every account should have tooling to perform analysis for compliance audits.
+The necessary data should be compiled by indexing the various event sources
+available. Where practical, data should be streamed and processed in real time,
+reacting to data via automated pipelines. Data should also be indexed for
+historical analysis as well.
+
+In short, accounts should audit themselves, while still providing mechanisms to
+make the data available outside of the account.
 
 - config rules
 - cloudtrail analysis
 - required tags
+
+## Advanced
+
+TODO
+
+## Costs
+
+TODO
