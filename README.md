@@ -1,4 +1,4 @@
-# AWS Account Baseline
+# AWS Baseline
 
 Defines esssential baseline resources that should exist in every AWS account.
 This project is intended to be a combination of best practices documentation
@@ -12,13 +12,13 @@ that can be consumed by various tooling, for the most truest sense of freedom.
 
 ## Maturity
 
-This project is in the initial planning stages. Don't expect anything to be
-functional.
+This project is a work in progress. Don't expect anything to be functional. You
+are owed NOTHING! But we're going to follow semver once things are rolling.
 
 ## Documentation
 
-View the [initial draft] of the documentation for more details. (Be warned,
-it's not much more than a few lists of AWS services at this point.)
+You can view the doc on [GitHub Pages]. The Markdown sources are all in the
+[docs] directory.
 
 ## Contributing
 
@@ -29,9 +29,14 @@ out the [Code of Conduct] while you're at it.
 
 This project uses the [MIT License].
 
+## License
+
+This project uses the [MIT License].
+
 
 <!-- Markdown Anchors -->
-[initial draft]: docs/index.md
+[GitHub Pages]: https://timoguin.github.io/aws-baseline
+[docs]: https://github.com/timoguin/aws-baseline/tree/master/docs
 [Contributing Guide]: .github/CONTRIBUTING.md
 [Code of Conduct]: .github/CODE_OF_CONDUCT.md
 [MIT License]: .github/LICENSE.md
