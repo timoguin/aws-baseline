@@ -70,7 +70,7 @@ site_dir: null
 #   -
 
 extra:
-  version: 0.1.0
+  version: 0.1.2
   search:
     language: en
     tokenizer: '[\s\-\.]+'
