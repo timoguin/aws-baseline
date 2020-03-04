@@ -34,3 +34,6 @@ override.tf.json
 
 # Ignore built documentation
 site
+
+# Ignore env vars file
+.env
