@@ -20,6 +20,20 @@ are owed NOTHING! But we're going to follow semver once things are rolling.
 You can view the doc on [GitHub Pages]. The Markdown sources are all in the
 [docs] directory.
 
+## Building the Docs
+
+Requirements:
+
+- Poetry: This project uses poetry for managing Python requirements
+- make: Used for convenience in building/deploying the docs
+
+A static site is generated from the Markdown sources by using mkdocs. To build,
+a simple `make build` should do.
+
+To run a local server that will auto-generate and reload the static site when
+the Markdown sources or mkdocs configs are modified. Use `make serve` to run
+it, and access it on https://localhost:3000
+
 ## Contributing
 
 View the [Contributing Guide] if you're interested in. . . contributing. Check
