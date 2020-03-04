@@ -1,7 +1,10 @@
+ENV_FILE := .env
 VENV_DIR := .venv
-VENV_CMD := poetry run
 
-.PHONY: all venv build serve deploy
+# Source the ENV_FILE before running poetry commands
+VENV_CMD := . $(ENV_FILE) && poetry run
+
+.PHONY: all venv $(VENV_DIR) build serve deploy
 
 all: venv build
 

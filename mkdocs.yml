@@ -10,8 +10,12 @@ edit_uri: null
 
 site_description: Baseline requirements to install in all AWS accounts, documented and codified
 site_author: Tim O'Guin
-copyright: null
-google_analytics: null
+copyright: © 2019 Tim O'Guin
+
+# Analytics tracking for the site_url
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_TOKEN"]
+  - auto
 
 # Defaults to the origin/gh-pages branch
 remote_branch: null
@@ -29,8 +33,8 @@ nav:
 theme:
   name: material
   language: en
-  favicon: null
-  # logo: null
+  favicon: images/favicon.ico
+  logo: images/aws-baseline-logo.png
   feature:
     - tabs: true
   palette:
