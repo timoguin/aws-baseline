@@ -29,10 +29,6 @@ out the [Code of Conduct] while you're at it.
 
 This project uses the [MIT License].
 
-## License
-
-This project uses the [MIT License].
-
 
 <!-- Markdown Anchors -->
 [GitHub Pages]: https://timoguin.github.io/aws-baseline
