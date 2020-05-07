@@ -1,0 +1,55 @@
+bucket: null
+acl: private
+force_destroy: false
+policy: null
+region: us-east-1
+tags: null
+versioning:
+  enabled: true
+logging:
+  target_bucket: null
+  target_prefix: null
+lifecycle_rule:
+  prefix: null
+  enabled: true
+  noncurrent_version_transition:
+  - days: 30
+    storage_class: STANDARD_IA
+  - days: 60
+    storage_class: GLACIER
+  noncurrent_version_expiration:
+    days: 30
+replication_configuration:
+  role: null
+  rules:
+  - id: null
+    prefix: null
+    priority: null
+    status: Enabled
+    destination:
+    - bucket: null
+      storage_class: STANDARD
+      replica_kms_key_id: null
+      account_id: null
+      access_control_translation:
+        owner: null
+    source_selection_criteria:
+      sse_kms_encrypted_objects:
+        enabled: true
+    filter:
+    - prefix: null
+      tags: null
+object_lock_configuration:
+  object_lock_enabled: null
+  rule:
+    default_retention:
+      mode: null
+      days: null
+      years: null
+server_side_encryption_configuration:
+  rule:
+    apply_server_side_encryption_by_default:
+      kms_master_key_id: null
+      sse_algorithm: aws:kms
+lifecycle:
+  prevent_destroy: true

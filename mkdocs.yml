@@ -24,8 +24,13 @@ remote_name: null
 nav:
    - Overview: overview.md
    - Goals: goals.md
-   - Specification: spec.md
-   - Code: code.md
+   - Spec:
+     - Index: spec/index.md
+     - CloudTrail: spec/cloudtrail/index.md 
+     - Config: spec/config/index.md 
+     - S3: spec/s3/index.md 
+     - Logging: spec/logging.md
+   - Code: code/index.md
    # - Advanced: advanced.md
    # - Costs: costs.md
    # - Issue Tracker: https://github.com/timoguin/aws-baseline/issues
