@@ -37,3 +37,6 @@ site
 
 # Ignore env vars file
 .env
+
+# No git dirs
+.git
